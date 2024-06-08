@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: plus jakarta sans;
+}
+/* ============================== */
+/* ============================== */
+
+
+
+.nl {
+    font-weight: 800;
+    position: relative;
+    color: #14274E; /* Warna teks */
+    text-decoration: none; /* Hapus garis bawah default */
+}
+
+.nl::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #14274E; /* Warna underline */
+    transform: scaleX(0); /* Initial state of underline - invisible */
+    transform-origin:  left ; /* Atur titik transformasi */
+    transition: transform 0.8s ease; /* Transition effect */
+}
+
+.nl:hover::after {
+    transform: scaleX(1); /* Fully reveal the underline on hover */
+}
+
+.n2{
+    color: #F1F6F9;
+     font-weight: 800; 
+     border-radius: 50px; 
+     border: 3px solid #14274E;
+     background: #14274E; 
+     border-radius: 50px;
+     transition: 0.5s;
+}
+
+.n2:hover{
+    background: none;
+    color: #14274E;
+}

@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: plus jakarta sans;
+}
+/* ============================== */
+/* ============================== */
+
+
+
+.nl {
+    font-weight: 800;
+    position: relative;
+    color: #14274E; /* Warna teks */
+    text-decoration: none; /* Hapus garis bawah default */
+}
+
+.nl::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #14274E; /* Warna underline */
+    transform: scaleX(0); /* Initial state of underline - invisible */
+    transform-origin: bottom left; /* Atur titik transformasi */
+    transition: transform 0.8s ease; /* Transition effect */
+}
+
+.nl:hover::after {
+    transform: scaleX(1); /* Fully reveal the underline on hover */
+}
+
+.n2{
+  color: #F1F6F9;
+   font-weight: 800; 
+   border-radius: 50px; 
+   border: 3px solid #14274E;
+   background: #14274E; 
+   border-radius: 50px;
+   transition: 0.5s;
+}
+
+.n2:hover{
+  background: none;
+  color: #14274E;
+}
+
+.footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+}
+
+.profile-img{
+  transition: 1s;
+}
+
+.profile-img:hover{
+  transform:rotate(5deg) scale(1.1);
+}
+
+.profile-img2{
+  transition: 1s;
+}
+
+.profile-img2:hover{
+  transform:rotate(-5deg) scale(1.1);
+}
+
+.major{
+  background: #14274E;
+  color: #F1F6F9;
+  border: 3px solid #14274E;
+  transition: 0.4s;
+}
+.major:hover{
+  background: none;
+  color: #14274E;
+}
+.cv-btn{
+  border: 3px solid #14274E;
+  color: #14274E;
+  transition: 0.4s;
+}
+.cv-btn:hover{
+  background: #14274E;
+  color: #F1F6F9;
+}
+
+.img-project{
+  transition: 0.5s;
+}
+.img-project:hover{
+  transform: scale(0.8);
+}
+
+.socmed-btn{
+  background: #F1F6F9;
+  color: #14274E;
+  border: 3px solid #F1F6F9;
+  transition: 0.4s;
+}
+
+.socmed-btn:hover{
+  background: #14274E;
+  color: #F1F6F9;
+}
+/* splash */
+/* CSS untuk splash screen */
+#splash-screen {
+     /* Tambahkan transisi untuk opacity */
+     transition: opacity 0.5s ease-in-out;
+     opacity: 1; /* Atur opacity awal menjadi 1 */
+     /* Tambahkan z-index untuk memastikan splash screen berada di atas konten utama */
+     z-index: 9999;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: #ffffff;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+  }
+  
+  /* CSS untuk animasi progres bar */
+  .progress-bar {
+    width: 200px; /* Lebar progres bar */
+    height: 10px; /* Tinggi progres bar */
+    background-color: #cccccc; /* Warna latar belakang progres bar */
+    margin-top: 20px; /* Jarak dari atas */
+  }
+  
+  .progress-bar-fill {
+    height: 100%;
+    background-color: #007bff; /* Warna progres bar */
+    animation: progress 5s linear forwards; /* Animasi progres bar */
+  }
+  
+  @keyframes progress {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+  /* CSS untuk menyembunyikan konten halaman utama */
+  #main-content {
+    opacity: 0; /* Atur opacity awal menjadi 0 */
+    /* Tambahkan transisi untuk opacity */
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Tambahkan kelas untuk menunjukkan bahwa konten utama sudah ditampilkan */
+#main-content.show {
+    opacity: 1;
+}
+
+/* splashend */
+
+/*============================== Fade in on load ===================================*/
+/* CSS untuk animasi fade-in */
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation ease-in 1s forwards;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Memberikan durasi delay untuk efek fade-in */
+.delay-1 {
+  animation-delay: 0.5s; /* Ubah durasi delay sesuai kebutuhan */
+}
+
+.delay-2 {
+  animation-delay: 1.5s; /* Ubah durasi delay sesuai kebutuhan */
+}
+
+.delay-3 {
+  animation-delay: 1.8s; /* Ubah durasi delay sesuai kebutuhan */
+}
+
+.delay-4 {
+  animation-delay: 2s; /* Ubah durasi delay sesuai kebutuhan */
+}
+
+.delay-5 {
+  animation-delay: 2.5s; /* Ubah durasi delay sesuai kebutuhan */
+}
+
+/*============================== Fade in on load  end ==========================================*/
+/*==============================  scrool animation ==========================================*/
+
+:root {
+  --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-duration: 1s;
+}
+
+
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(25%);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes slideInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-25%);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes slideInleft {
+  0% {
+    opacity: 0;
+    transform: translateX(25%);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-25%);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.75);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes zoomReverseIn {
+  0% {
+    opacity: 0;
+    transform: scale(1.25);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes flipInY {
+  0% {
+    opacity: 0;
+    transform: perspective(90vw) rotateY(67.50deg);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+[data-animation] {
+  opacity: 0;
+  animation-timing-function: var(--animation-timing-function);
+  animation-fill-mode: both;
+  animation-duration: var(--animation-duration);
+  will-change: transform, opacity;
+}
+
+
+.animations-disabled {
+  &,
+  [data-animation] {
+    animation: none !important;
+    opacity: 1 !important;
+  }
+}
+
+
+.slideInUp {
+  animation-name: slideInUp;
+}
+.slideInDown {
+  animation-name: slideInDown;
+}
+.slideInLeft {
+  animation-name: slideInleft;
+}
+.slideInRight {
+  animation-name: slideInRight;
+}
+
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+
+.zoomIn {
+  animation-name: zoomIn;
+}
+.zoomReverseIn {
+  animation-name: zoomReverseIn;
+}
+
+.flipInY {
+  animation-name: flipInY;
+}
+.flipOutY {
+  animation-name: flipInY;
+  animation-direction: reverse;
+}
+/*============================== scroll animation end ==========================================*/

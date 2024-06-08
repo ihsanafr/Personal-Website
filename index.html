@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="shortcut icon" type="x-icon" href="img/x-icon.png">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+  <title>Ihsanafr</title>
+</head>
+
+<body>
+
+  <!-- splash -->
+  <div id="splash-screen" class="h-screen flex justify-center items-center" style="background: #14274E;">
+    <p style="color:#F1F6F9; font-weight: bold;">Loading Portofolio</p>
+    <div class="progress-bar w-64 h-4  mt-4"
+      style="background: #14274E; border-radius: 10px; border: 3px solid #F1F6F9;">
+      <div id="progress" class="progress-bar-fill h-full " style="background: #F1F6F9;"></div>
+    </div>
+  </div>
+  <!-- splash -->
+
+  <div id="main-content" class="hidden">
+    <!-- Navbar -->
+  <nav class="fade-in delay-1 border-gray-200 fixed  w-full z-20 dark:bg-gray-900 drop-shadow-2xl5"
+  style="background: #F1F6F9; box-shadow: 0px 0px 10px #14274e54;">
+  <div class="flex-col  max-w-screen-xl flex md:flex-row  justify-between mx-auto p-4 py-6 relative"
+    style="background: #F1F6F9;">
+    <div class="flex flex-row justify-between" style="background: #F1F6F9;">
+      <a href="#" class="items-center flex space-x-3 rtl:space-x-reverse">
+        <span class="self-center text-2xl font-bold whitespace-nowrap" style="color: #14274E;">Ihsanafr</span>
+      </a>
+      <!-- responsive -->
+      <button id="navbar-toggle" type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only"></span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- responsive -->
+    <div class="hidden top-full left-0 right-0  z-50 md:static md:block md:w-auto" id="navbar-default">
+      <ul
+        class="flex flex-col p-4 md:p-0 md:justify-center md:align-center md:items-center  border  rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0"
+        style="background: #F1F6F9;">
+        <li>
+          <a href="index.html" class="nl block py-2 px-3 rounded md:border-0 md:p-0" style="color: #14274E;">Home</a>
+        </li>
+        <li style="background: #F1F6F9;">
+          <a href="" class="nl block py-2 px-3 rounded md:border-0 md:p-0" aria-current="page"
+            style="color: #14274E; font-weight: 800;">My Skills</a>
+        </li>
+
+        <li>
+          <a href="#" class="nl block py-2 px-3 rounded md:border-0 md:p-0" style="color: #14274E;">Projects</a>
+        </li>
+        <li>
+          <a href="#" class="nl block py-2 px-3 rounded md:border-0 md:p-0" style="color: #14274E;">Certificates</a>
+        </li>
+        <li class="n2">
+          <a href="#" class=" block py-2 px-3 rounded  md:py-2 md-px-8 md-my-5">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Navbar -->
+
+    <!-- Hero -->
+    <section class="hero md:h-full h-auto" style="background: #F1F6F9; overflow-y: hidden;">
+      <div
+        class="md:py-8 mx-auto mt-32 sm:mt-0 h-screen md:h-acreen w-[90%] max-w-screen-xl lg:py-10 flex items-center "
+        style="overflow-y: hidden;">
+        <div class="container flex md:flex-row flex-col-reverse items-center  mx-auto py-20">
+          <div class="title-area  md:w-2/3 w-full text-white md:mt-0 mt-5 ">
+            <p class="fade-in delay-3 text-5xl h-full text-center sm:text-justify"
+              style=" color: #14274E;font-weight: 800 ; overflow-y: hidden; ">Hello I'm <br>Ihsan Ahmad
+              Fakhriansyah</span>
+            </p>
+            <p class="fade-in delay-4 w-1/4 sm:w-3/4 w-full text-center text-2xl sm:text-justify"
+              style="font-weight: 600; color: #394867;">a vocational school student
+              studying IT, software engineering, and loves graphic design</p>
+            <div class=" mt-4 flex items-center justify-center sm:justify-start">
+              <div class="major fade-in delay-5 w-3/4 sm:w-2/5 flex items-center"
+                style=" display: flex; justify-content: center; align-items: center; border-radius: 20px;">
+                <p class="text-lg my-4 mx-4 sm:w-56 " style="font-weight: 800;">Junior Software Engineer</p>
+              </div>
+            </div>
+          </div>
+          <div class="profile-img image-area md:w-1/3 w-full md:mr-10">
+            <img class=" fade-in delay-2 rounded-xl md:w-auto w-full h-full" src="img/profile.png" alt="foto-saya">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- endhero -->
+
+
+    <!-- about -->
+    <section id="about" class="hero md:h-full h-auto" style="background: #F1F6F9;">
+      <div class="md:py-8 mx-auto h-screen w-[100%] lg:py-10 flex items-center px-10 " style="overflow-y: hidden;">
+        <div data-animation="fadeIn" data-animation-delay="0.5s"
+          class="container flex md:flex-row max-w-screen-xl justify-center md:justify-between items-center md:mx-auto py-10 md:py-28 mb-8 rounded-xl"
+          style="background: #F1F6F9; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.308);">
+          <div class="profile-img2 image-area hidden md:block md:w-1/3 w-full ml-28 ">
+            <img data-animation="slideInRight" data-animation-delay="1.5s" class=" rounded-xl md:w-auto w-full h-full"
+              src="img/about.png" alt="foto-saya">
+          </div>
+          <div class="text-white w-[80%] md:mt-0 mt-5 md:w-[40%] md:mr-28">
+            <p data-animation="slideInLeft" data-animation-delay="2s"
+              class="  text-2xl md:text-5xl h-full md:py-2 text-center sm:text-justify"
+              style="color: #14274E;font-weight: 800 ; overflow-y: hidden; ">I’m Junior<br>Software Engginers</span>
+            </p>
+            <p data-animation="slideInLeft" data-animation-delay="2.5s"
+              class=" text-center text-lg sm:text-justify mt-10" style="font-weight: 600; color: #394867;">A male
+              student born on April 24 2008 in Jakarta, has dreams in the IT field, and is studying in the IT
+              programming field
+            </p>
+            <p data-animation="slideInLeft" data-animation-delay="2.6s"
+              class=" text-center text-lg sm:text-justify mt-10" style="font-weight: 600; color: #394867;">A male have
+              intermediate English language skills and Islamic religious studies</p>
+            <div data-animation="slideInLeft" data-animation-delay="2.8s"
+              class=" mt-4 flex items-center justify-center sm:justify-start">
+              <a href="#" class="cv-btn"
+                style="border: 3px solid #14274E; font-weight: 800; padding: 5px 20px; border-radius: 10px;">
+                See My CV
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- aboutend -->
+
+
+    <!-- My project -->
+    <section class="" style="background: #14274E;">
+      <div class="py-28 px-4 mx-auto max-w-screen-xl md:py-16 md:px-6">
+        <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
+          <h2 data-animation="slideInUp" data-animation-delay="0.6s"
+            class="mb-4 h-20 text-6xl tracking-tight font-extrabold" style="color: #F1F6F9;">My Project</h2>
+          <p data-animation="slideInDown" data-animation-delay="1s" class="mb-5 font-light text-gray-500 sm:text-xl">
+            </p>
+        </div>
+        <div class="flex flex-col align-center justify-center items-center flex md:flex-row "
+          style="overflow-y: hidden;">
+
+          <!-- project 1 -->
+          <div data-animation="slideInUp" data-animation-delay="1.5s"
+            class="max-w-xl  shadow flex flex-col justify-center align-center py-6 px-10 md:px-16 mb-10 md:mr-8"
+            style="background: #F1F6F9; border-radius: 30px;">
+            <h5 class="mb-5 text-xl md:text-3xl  text-center"
+              style="font-weight: 800; overflow-y: hidden; color: #14274E;">Website Project</h5>
+            <img class="img-project" style="border: 3px solid #14274E; border-radius: 30px;" src="img/wpro1.png"
+              alt="" />
+            <div class="pt-10">
+              <a href="#"
+                class="cv-btn inline-flex flex align-items justify-center w-full py-3 md:py-6 text-xl md:text-2xl font-bold text-center  "
+                style=" font-weight: 800; border-radius: 30px; ">
+                See Project
+              </a>
+            </div>
+          </div>
+
+
+
+          <!-- project 2 -->
+          <div data-animation="slideInUp" data-animation-delay="2s"
+            class="max-w-xl  shadow flex flex-col justify-center align-center py-6 px-10 md:px-16 mb-10 md:ml-8"
+            style="background: #F1F6F9; border-radius: 30px; ">
+            <h5 class="mb-5 text-xl md:text-3xl  text-center"
+              style="font-weight: 800; overflow-y: hidden; color: #14274E;">UI UX Project</h5>
+            <img class="img-project" style="border: 3px solid #14274E; border-radius: 30px;" src="img/uixpro1.png"
+              alt="" />
+            <div class="pt-10">
+              <a href="#"
+                class="cv-btn inline-flex flex align-items justify-center w-full py-3 md:py-6 text-xl md:text-2xl font-bold text-center  "
+                style=" font-weight: 800; border-radius: 30px;">
+                See Project
+              </a>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- My project end -->
+
+    <!-- contact -->
+    <section class="hero md:h-full h-auto" style="background: #14274E; overflow-y: hidden;">
+      <div class="md:py-8 mx-auto h-screen w-[90%] max-w-screen-xl lg:py-10 px-5 md:px-0 flex items-center "
+        style="overflow-y: hidden;">
+        <div class="container items-center mx-auto flex justify-center mb-8 ">
+          <div class="title-area  md:w-2/3 w-full text-white md:mt-0 mt-5 ">
+            <p data-animation="fadeIn" data-animation-delay="0.8s"
+              class="md:text-5xl text-2xl md:h-16 h-18 text-center align-center justify-center flex sm:text-justify"
+              style="color: #F1F6F9;font-weight: 800 ; overflow-y: hidden; ">Thank You For Visiting :)</p>
+            </p>
+            <p data-animation="fadeIn" data-animation-delay="1.1s"
+              class="md:h-16 h-16 text-center align-center justify-center flex text-lg md:text-2xl"
+              style="font-weight: 600; color: #F1F6F9;">visit my social media for business and other needs
+            </p>
+            <div class="flex-col md:flex-row md:flex md:justify-center md:align-center" style="overflow-y: hidden;">
+              <div class="flex mt-10 md:mt-0 justify-center align-center md:mr-5" style="overflow-y: hidden;">
+                <div data-animation="slideInUp" data-animation-delay="1.2s" class="p-3 mr-5 socmed-btn"
+                  style="border-radius: 50px;">
+                  <a href="#"><svg class="w-12 h-12" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="80"
+                      height="80" fill="none" viewBox="0 0 24 24">
+                      <path fill="currentColor" fill-rule="evenodd"
+                        d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </a>
+                </div>
+                <div data-animation="slideInUp" data-animation-delay="1.5s" class="p-3 ml-5 socmed-btn"
+                  style="border-radius: 50px;">
+                  <a href=""><svg class="w-12 h-12" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                      height="24" fill="currentColor" viewBox="0 0 24 24">
+                      <path fill-rule="evenodd"
+                        d="M21.7 8.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.839c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.839 4.225 4.225 0 0 0-.79 1.965 30.146 30.146 0 0 0-.2 3.206v1.5a30.12 30.12 0 0 0 .2 3.206c.094.712.364 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.151 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965 30.12 30.12 0 0 0 .2-3.206v-1.516a30.672 30.672 0 0 0-.202-3.206Zm-11.692 6.554v-5.62l5.4 2.819-5.4 2.801Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </a>
+                </div>
+
+              </div>
+              <div class="flex mt-10 md:mt-0 justify-center align-center md:ml-5" style="overflow-y: hidden;">
+                <div class="flex  justify-center align-center" style="overflow-y: hidden;">
+                  <div data-animation="slideInUp" data-animation-delay="1.8s" class="p-3 mr-5 socmed-btn"
+                    style="border-radius: 50px;">
+                    <a href=""><svg class="w-12 h-12" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                          d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z"
+                          clip-rule="evenodd" />
+                        <path d="M7.2 8.809H4V19.5h3.2V8.809Z" />
+                      </svg>
+                    </a>
+                  </div>
+                  <div data-animation="slideInUp" data-animation-delay="2.1s" class="p-3 ml-5 socmed-btn"
+                    style="border-radius: 50px;">
+                    <a href=""><svg class="w-12 h-12" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                          d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+    </section>
+    <!-- contact end -->
+    <div class="footer">
+      <p>© 2024 Ihsan ahmad. All right Reserved.</p>
+    </div>
+  </div>
+  <script src="JS/script.js"></script>
+</body>
+
+</html>
